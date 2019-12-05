@@ -1,18 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int n = 10; //Задаем число повторений
-        int x = 0; //Задаем первое число ряда
-        int y = 1; //Задаем второе число ряда
-        for(int i = 0; i < n; i++) {
-            x += y; //Магия ()
-            y = x - y; //И Снова Магия ()
-            System.out.println(y); // Показываем Магию =)
+        //Fn = Fn-1 + Fn-2
+        int repetition = 10;
+        int Fn1 = 0;
+        int Fn2 = 1;
+        for(int Counter_Fibonacci = 0; Counter_Fibonacci < repetition; Counter_Fibonacci++) {
+            Fn1 += Fn2;
+            Fn2 = Fn1 - Fn2;
+            System.out.println(Fn2);
         }
-        int v = 1; // вспомогательная переменная
-        int c = 6; // Число от которого будет расчитан факториал
-        for(int b = 1; b <= c; b++) {
-           v *= b; // Вычисление факториала
+        int Factorial = 1;
+        int Num_Factorial = 6;
+        for(int Counter_Factorial = 1; Counter_Factorial <= Num_Factorial; Counter_Factorial++) {
+            Factorial *= Counter_Factorial;
         }
-        System.out.println("Факториал от " + c + " = " + v);
+        System.out.println("Факториал от " + Num_Factorial + " = " + Factorial);
     }
 }
