@@ -9,6 +9,7 @@ public class Main {
             Fn2 = Fn1 - Fn2;
             System.out.println(Fn2);
         }
+        //Factorial = Factorial * Factorial^n
         int Factorial = 1;
         int Num_Factorial = 6;
         for(int Counter_Factorial = 1; Counter_Factorial <= Num_Factorial; Counter_Factorial++) {
